@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ehsan's personal portfolio showcasing projects, skills, and contact information."
+    />
+    <title>Ehsan's Portfolio</title>
+    <link rel="shortcut icon" href="./images/resume.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Grenze+Gotisch:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <h2>Portfolio. <span>Ehsan</span></h2>
+      </div>
+
+      <!-- nav-bar -->
+
+      <nav
+        id="site-nav"
+        role="navigation"
+        data-visible="false"
+        aria-label="Primary"
+      >
+        <ul class="primary-navigation" id="primary-navigation">
+          <li><a href="#carousel-container">Home</a></li>
+          <li><a href="#skills-container">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li>
+            <button
+              class="theme-switch"
+              data-visible="true"
+              aria-label="Toggle theme"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#d62828"
+              >
+                <path
+                  d="M493.68-294.74q77.28 0 131.42-54.14 54.13-54.15 54.13-131.82 0-77.68-54.13-131.79-54.14-54.1-131.42-54.1-17.27 0-34.21 3.55-16.93 3.56-33.27 10.11 48.34 25.28 76.68 71.37 28.34 46.1 28.34 100.89 0 54.8-28.34 100.89-28.34 46.1-76.68 71.66 16.32 6.26 33.26 9.82 16.95 3.56 34.22 3.56ZM480.67-10.96 343.55-144.17H144.17v-199.38L8.96-480l135.21-136.45V-816.2h199.38l137.12-135.41L616.45-816.2H816.2v199.75L951.61-480 816.2-343.55v199.38H616.45L480.67-10.96Zm0-123.47 98.87-97.89h148.14v-148.46l99.6-99.22-99.6-99.59v-148.09H579.59l-98.92-99.6-99.89 99.6H232.32v148.09L133.1-480l99.22 99.22v148.46h147.8l100.55 97.89Zm0-346.24Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#c0ff00"
+              >
+                <path
+                  d="M480.07-359.78q50.02 0 85.36-35.25 35.35-35.25 35.35-85.04 0-50.02-35.41-85.36-35.42-35.35-85.44-35.35-50.02 0-85.08 35.41-35.07 35.42-35.07 85.44 0 50.02 35.25 85.08 35.25 35.07 85.04 35.07ZM480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM209.61-440.39H30.39v-79.22h179.22v79.22Zm720 0H750.39v-79.22h179.22v79.22Zm-489.22-310v-179.22h79.22v179.22h-79.22Zm0 720v-179.22h79.22v179.22h-79.22ZM261.43-643.87l-113-110.56 56-58.14 110.7 112.44-53.7 56.26Zm495.14 495.44-112.7-113L699-316.57l112.57 110.44-55 57.7ZM643.43-699l111-112.57 58.14 55-111.44 112.7-57.7-55.13Zm-495 494.57 112-112.7L316.57-261 206.13-148.43l-57.7-56ZM480-480Z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- hamburger -->
+
+      <button
+        class="menu-btn"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="open-menu"
+      >
+        <svg
+          class="hamburger"
+          viewBox="0 0 30 30"
+          width="30"
+          height="30"
+          aria-hidden="true"
+        >
+          <rect
+            width="24"
+            height="4"
+            x="3"
+            y="7"
+            rx="2"
+            class="line top"
+          ></rect>
+          <rect
+            width="24"
+            height="4"
+            x="3"
+            y="15"
+            rx="2"
+            class="line middle"
+          ></rect>
+          <rect
+            width="24"
+            height="4"
+            x="3"
+            y="23"
+            rx="2"
+            class="line bottom"
+          ></rect>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section id="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-item active">
+            <div class="slide1-info">
+              
+              <div class="introduction">
+                <h1>
+                  Hi, I'm <span>Ehsan</span> <br />
+                  Frontend Web Developer
+                </h1>
+                <div class="intro-btn">
+                  <a href="./Ehsan Ahmad internship 28 nov 2025.pdf" target="_blank"><button class="hero-btn">Resume</button></a>
+                  <a href="#contacts"><button class="hero-btn">Hire me</button></a>
+                </div>
+              </div>
+              <div class="slide1-photo">
+                <img src="./images/ehsan.png" alt="Ehsan profile Picture" />
+              </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide2-info">
+              <h2>Services</h2>
+              <div class="bento-grid">
+                <div class="boxes box1" style="grid-area: box1">
+                  <h3>Frontend Web Development</h3>
+                  <p>
+                    Modern, clean and responsive websites using HTML, CSS &
+                    JavaScript.
+                  </p>
+                </div>
+                <div class="boxes box2" style="grid-area: box2">
+                  <h3>Responsive Web Design</h3>
+                  <p>
+                    Mobile-friendly UI using Flexbox, Grid and modern CSS
+                    techniques.
+                  </p>
+                </div>
+                <div class="boxes box3" style="grid-area: box3">
+                  <h3>UI Enhancements & Bug Fixing</h3>
+                  <p>
+                    Fixing layout issues, improving design quality and resolving
+                    HTML/CSS/JS errors.
+                  </p>
+                </div>
+                <div class="boxes box4" style="grid-area: box4">
+                  <h3>Website Redesign</h3>
+                  <p>
+                    Giving old websites a fresh, modern and professional look.
+                  </p>
+                </div>
+                <div class="boxes box5" style="grid-area: box5">
+                  <h3>JavaScript Interactions</h3>
+                  <p>
+                    Adding sliders, modals, tabs, dropdowns, form validation and
+                    simple dynamic features.
+                  </p>
+                </div>
+                <div class="boxes box6" style="grid-area: box6">
+                  <h3>Code Optimization</h3>
+                  <p>Cleaning and optimizing code for faster performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide3-info">
+              <div class="about-photo">
+                <img src="./images/ehsan-about-me.png" alt="ehsan image" />
+              </div>
+              <div class="about-me">
+                <h1>About me</h1>
+                <p>
+                  I’m from Patna, Bihar, with a strong foundation in Mathematics
+                  and Reasoning, supported by clearing SSC prelims exam four
+                  times.
+                </p><br>
+                <p>
+                  My English proficiency comes from completing my Bachelor’s in
+                  English Honours, which has strengthened my communication and
+                  understanding skills.
+                </p><br>
+                <p>
+                  In web development, I have a solid grasp of HTML, CSS, and
+                  JavaScript, and I’m currently learning React to expand my
+                  frontend capabilities.
+                </p><br>
+                <p>
+                  I learn quickly, adapt fast, and focus on writing clean,
+                  structured, and user-friendly code.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- indicators -->
+
+        <div class="indicators">
+          <button data-slide="0" class="active indicator"></button>
+          <button data-slide="1" class="indicator"></button>
+          <button data-slide="2" class="indicator"></button>
+        </div>
+
+        <!-- controls -->
+        <button class="controls prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#1f1f1f"
+          >
+            <path d="M560-280 360-480l200-200v400Z" />
+          </svg>
+        </button>
+        <button class="controls next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#1f1f1f"
+          >
+            <path d="M400-280v-400l200 200-200 200Z" />
+          </svg>
+        </button>
+      </section>
+      <section id="skills-container">
+        <div id="skills-wrapper">
+          <div class="skills-track">
+          <div class="skill" title="HTML - 95%">
+            <img src="./skills-icons/html.png" alt="html png" />
+          </div>
+          <div class="skill" title="CSS - 90%">
+            <img src="./skills-icons/css.png" alt="css png" />
+          </div>
+          <div class="skill" title="JAVASCRIPT - 90%">
+            <img src="./skills-icons/javascript.png" alt="javascript png" />
+          </div>
+          <div class="skill" title="BOOTSTRAP - 70%">
+            <img src="./skills-icons/bootstrap.png" alt="bootstrap png" />
+          </div>
+          <div class="skill" title="JQUERY - 60%">
+            <img src="./skills-icons/jquery.png" alt="jquery png" />
+          </div>
+          <div class="skill" title="NODEJS - 30%">
+            <img src="./skills-icons/node.png" alt="nodejs png" />
+          </div>
+        </div>
+
+        <!-- duplicate skills -->
+
+        <div aria-hidden="true" class="skills-track">
+          <div class="skill" title="HTML - 95%">
+            <img src="./skills-icons/html.png" alt="html png" />
+          </div>
+          <div class="skill" title="CSS - 90%">
+            <img src="./skills-icons/css.png" alt="css png" />
+          </div>
+          <div class="skill" title="JAVASCRIPT - 90%">
+            <img src="./skills-icons/javascript.png" alt="javascript png" />
+          </div>
+          <div class="skill" title="BOOTSTRAP - 70%">
+            <img src="./skills-icons/bootstrap.png" alt="bootstrap png" />
+          </div>
+          <div class="skill" title="JQUERY - 60%">
+            <img src="./skills-icons/jquery.png" alt="jquery png" />
+          </div>
+          <div class="skill" title="NODEJS - 30%">
+            <img src="./skills-icons/node.png" alt="nodejs png" />
+          </div>
+        </div>
+        </div>
+        
+      </section>
+      <section id="projects">
+        <div class="cards card1">
+          <div class="card-body">
+            <h3>Tic Tac Toe</h3>
+            <p>First Project a fully functional game.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href="https://ehsanwebdev-29.github.io/Tic-Tac-Toe-/"><button class="live">Live</button></a>
+              <a target="_blank" href="https://github.com/EhsanWebDev-29/Tic-Tac-Toe-"><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card2">
+          <div class="card-body">
+            <h3>Calculator</h3>
+            <p>Daily use functionality calculator.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href="https://ehsanwebdev-29.github.io/Calculator/"><button class="live">Live</button></a>
+              <a target="_blank" href="https://github.com/EhsanWebDev-29/Calculator"><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card3">
+          <div class="card-body">
+            <h3>Friend's Portfolio</h3>
+            <p>Multipage Portfolio website.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>BOOTSTRAP</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href="https://ehsanwebdev-29.github.io/Friend-Portfolio-Website/index.html"><button class="live">Live</button></a>
+              <a target="_blank" href="https://github.com/EhsanWebDev-29/Friend-Portfolio-Website"><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card4">
+          <div class="card-body">
+            <h3>Simon Game</h3>
+            <p>Fully funtional game with sound effects.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href="https://ehsanwebdev-29.github.io/Simon-Game/"><button class="live">Live</button></a>
+              <a target="_blank" href="https://github.com/EhsanWebDev-29/Simon-Game"><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card5">
+          <div class="card-body">
+            <h3>KBC Game</h3>
+            <p>Interesting game must play once.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href=""><button class="live">Live</button></a>
+              <a target="_blank" href=""><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards card6">
+          <div class="card-body">
+            <h3>Weather App</h3>
+            <p>Custom theme useful weather app.</p>
+            <p class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </p>
+            <div class="card-btn">
+              <a target="_blank" href=""><button class="live">Live</button></a>
+              <a target="_blank" href=""><button class="code">Code</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <div class="contact-wrapper">
+          <h2>Contact me</h2>
+          <form action="">
+            <div class="name-box">
+              <label for="fullname-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M400-400q-50 0-85-35t-35-85q0-22 7-41.5t21-35.5q-4-10-6-21t-2-22q0-38 20.5-67.5T374-751q20-23 47-36t59-13q32 0 59 13t47 36q33 14 53.5 43.5T660-640q0 11-2 22t-6 21q14 16 21 35.5t7 41.5q0 50-35 85t-85 35H400ZM160-80v-100q0-36.67 18.5-64.17T226.67-286q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17t125.33 15.5q62 15.5 127.34 45.17 30.33 14.33 48.83 41.83T800-180v100H160Z"/></svg>
+              </label>
+              <input required type="text" name="fullname" id="fullname-input" placeholder="Fullname">
+            </div>
+            <div class="email-box">
+              <label for="email-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M781.33-80Q722-80 681-122.33 640-164.67 640-224v-209.33q0-36 25.33-61.34 25.34-25.33 62-25.33 36 0 61 25.33 25 25.34 25 61.34V-220h-66.66v-215.33q0-10-5-17.67-5-7.67-14.34-7.67-9.33 0-15 7.67-5.66 7.67-5.66 17.67v212.66q0 33 21.16 57.5 21.17 24.5 53.5 24.5 31 0 51.5-23.5t20.5-55.83v-184.67H920V-220q0 58-40.33 99-40.34 41-98.34 41ZM108.67-240q-28.34 0-48.5-19.17Q40-278.33 40-306.67v-506.66Q40-841 59.5-860.5t47.17-19.5h666.66q27.67 0 47.17 19.5t19.5 47.17v260H720.67q-48 0-81 35.33t-33 84.67V-240h-498ZM440-535.33l333.33-211.34v-66.66L440-604.67 106.67-813.33v66.66L440-535.33Z"/></svg>
+              </label>
+              <input required type="email" name="email" id="email-input" placeholder="Email">
+            </div>
+            <div class="number-box">
+              <label for="mobile-number-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M771.33-485.33q-3.33-119.89-86.69-203.2-83.36-83.32-203.31-86.66V-842q73.67 1.33 137.84 29.83 64.16 28.5 112.33 76.67t76.67 112.33Q836.67-559 838-485.33h-66.67Zm-166.66 0q-3.34-50-38.34-84.67t-85-38v-66.67q77.67 3.34 132.17 57.5Q668-563 671.33-485.33h-66.66ZM796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.67 12.67-31.33Q145.33-840 164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806L376-675.33q2 14.66-.67 26Q372.67-638 364.67-630l-99 100q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.16-14.5 13.5-4.17 26.84-2.17L806-349.33q14.67 4 24.33 15.5Q840-322.33 840-308v144q0 18.67-12.67 31.33Q814.67-120 796-120Z"/></svg>
+              </label>
+              <input type="tel" name="mobile-number" id="mobile-number-input" placeholder="Mobile Number">
+            </div>
+            <div class="message-box">
+              <label for="message-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M240-400h480v-66.67H240V-400Zm0-126.67h480v-66.66H240v66.66Zm0-126.66h480V-720H240v66.67ZM146.67-240q-27 0-46.84-19.83Q80-279.67 80-306.67v-506.66q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33V-80L720-240H146.67Z"/></svg>
+              </label>
+              <textarea rows="10" name="message" id="message-input" placeholder="Write message here..."></textarea>
+            </div>
+            <button type="submit">Send Via Whatsapp <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-160v-240l320-80-320-80v-240l572 240h-12q-117 0-198.5 82.5T400-278L120-160Zm560 80q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80Zm66-106 28-28-74-74v-112h-40v128l86 86Z"/></svg></button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>Portfolio. <span>Ehsan</span></h3>
+          <p>Frontend Developer - building accessible, modern interfaces.</p>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#carousel-container">Home</a></li>
+            <li><a href="#skills-container">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-links">
+          <h4>Follow</h4>
+          <ul>
+            <li>
+              <a href="mailto:ehsan.webdev29@gmail.com" target="_blank"
+                ><img src="./social-icons/gmail.png" alt="gmail icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/EhsanWebDev-29?tab=repositories" target="_blank"
+                ><img src="./social-icons/github.png" alt="github icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ehsan-ahmad-1306a937b/" target="_blank"
+                ><img
+                  src="./social-icons/linkedIn.png"
+                  alt="linkedin icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© <span id="year"></span> Ehsan. All rights reserved.</small>
+        <a href="#carousel-container"><button id="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M520-200 80-480l440-280v246.67h360v66.66H520V-200Z"/></svg></button></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
